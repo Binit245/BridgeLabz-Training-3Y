@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block, Inline, Attributes and Layouts</title>
+</head>
+
+<body>
+
+    <!-- ================= BLOCK & INLINE ELEMENTS ================= -->
+
+    <header>
+        <h1>HTML Elements Practice</h1>
+
+        <nav>
+            <a href="#block">Block Elements</a> |
+            <a href="#inline">Inline Elements</a> |
+            <a href="#table">Table</a> |
+            <a href="#lists">Lists</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= BLOCK ELEMENTS ================= -->
+
+        <section id="block">
+
+            <h2>1. Block Elements</h2>
+
+            <div>
+                <h3>This is a Heading</h3>
+
+                <p>
+                    This is a paragraph. The paragraph is a block-level element.
+                </p>
+
+                <p>
+                    Block elements normally start on a new line and occupy
+                    the available width of their parent.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= INLINE ELEMENTS ================= -->
+
+        <section id="inline">
+
+            <h2>2. Inline Elements</h2>
+
+            <p>
+                This is a
+                <span style="color: red;">red inline text</span>
+                inside a paragraph.
+            </p>
+
+            <p>
+                This is <strong>bold text</strong>,
+                <em>emphasized text</em>,
+                <mark>highlighted text</mark>
+                and
+                <code>inline code</code>.
+            </p>
+
+            <p>
+                Visit
+                <a href="https://www.google.com" target="_blank">
+                    Google
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- ================= ATTRIBUTES ================= -->
+
+        <section>
+
+            <h2>3. HTML Attributes</h2>
+
+            <p id="para1">
+                This paragraph has an <strong>id</strong> attribute.
+            </p>
+
+            <div class="container">
+                This div has a class attribute.
+            </div>
+
+            <p style="color: blue;">
+                This text uses the style attribute.
+            </p>
+
+            <p title="This is a tooltip">
+                Hover your mouse over this text.
+            </p>
+
+            <img
+                src="https://via.placeholder.com/150"
+                alt="Sample Image"
+                title="Sample Image"
+            >
+
+            <br><br>
+
+            <input
+                type="text"
+                id="username"
+                class="input-field"
+                placeholder="Enter your name"
+                value=""
+            >
+
+            <br><br>
+
+            <input
+                type="text"
+                placeholder="Disabled Input"
+                disabled
+            >
+
+        </section>
+
+
+        <!-- ================= HEADINGS ================= -->
+
+        <section>
+
+            <h2>4. Headings</h2>
+
+            <h1>H1 - Main Heading</h1>
+            <h2>H2 - Subheading</h2>
+            <h3>H3 - Section Heading</h3>
+            <h4>H4 - Subsection</h4>
+            <h5>H5 - Smaller Heading</h5>
+            <h6>H6 - Minor Heading</h6>
+
+        </section>
+
+
+        <!-- ================= PARAGRAPHS ================= -->
+
+        <section>
+
+            <h2>5. Paragraph</h2>
+
+            <p>
+                This is a
+                <strong>strong paragraph</strong>
+                with
+                <em>emphasized text</em>
+                and
+                <mark>highlighted text</mark>.
+            </p>
+
+        </section>
+
+
+        <!-- ================= TABLE ================= -->
+
+        <section id="table">
+
+            <h2>6. HTML Table</h2>
+
+            <table border="1" cellpadding="10" cellspacing="5">
+
+                <caption>
+                    Student Marks
+                </caption>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Math</th>
+                        <th>Science</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John</td>
+                        <td>95</td>
+                        <td>88</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane</td>
+                        <td>89</td>
+                        <td>92</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+                        <td>Total</td>
+                        <td>184</td>
+                        <td>180</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- ================= COLSPAN & ROWSPAN ================= -->
+
+        <section>
+
+            <h2>7. Colspan and Rowspan</h2>
+
+            <table border="1" cellpadding="10">
+
+                <tr>
+                    <th colspan="2">
+                        Student Information
+                    </th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">
+                        Binit
+                    </td>
+
+                    <td>HTML</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ================= NESTED TABLE ================= -->
+
+        <section>
+
+            <h2>8. Nested Table</h2>
+
+            <table border="1" cellpadding="10">
+
+                <tr>
+
+                    <td>
+
+                        Main Table Cell
+
+                        <table border="1" cellpadding="5">
+
+                            <tr>
+                                <td>Nested 1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Nested 2</td>
+                            </tr>
+
+                        </table>
+
+                    </td>
+
+                    <td>
+                        Another Main Cell
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ================= DROPDOWN ================= -->
+
+        <section>
+
+            <h2>9. Dropdown / Select Menu</h2>
+
+            <label for="fruits">
+                Choose a fruit:
+            </label>
+
+            <select id="fruits" name="fruits">
+
+                <option value="apple">
+                    Apple
+                </option>
+
+                <option value="banana">
+                    Banana
+                </option>
+
+                <option value="mango" selected>
+                    Mango
+                </option>
+
+                <option value="orange">
+                    Orange
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- ================= QUOTATIONS ================= -->
+
+        <section>
+
+            <h2>10. Quotations</h2>
+
+            <p>
+                He said,
+                <q>HTML is fun!</q>
+            </p>
+
+            <blockquote>
+                HTML is the backbone of every website.
+            </blockquote>
+
+        </section>
+
+
+        <!-- ================= UNORDERED LIST ================= -->
+
+        <section id="lists">
+
+            <h2>11. Unordered List</h2>
+
+            <ul>
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================= ORDERED LIST ================= -->
+
+        <section>
+
+            <h2>12. Ordered List</h2>
+
+            <ol>
+
+                <li>Install VS Code</li>
+                <li>Create Project Folder</li>
+                <li>Create HTML File</li>
+                <li>Run Live Server</li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ================= ORDERED LIST ATTRIBUTES ================= -->
+
+        <section>
+
+            <h2>13. Ordered List with Attributes</h2>
+
+            <ol type="A" start="3" reversed>
+
+                <li>Step C</li>
+                <li>Step B</li>
+                <li>Step A</li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ================= DESCRIPTION LIST ================= -->
+
+        <section>
+
+            <h2>14. Description List</h2>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+
+            </dl>
+
+        </section>
+
+
+        <!-- ================= NESTED LIST ================= -->
+
+        <section>
+
+            <h2>15. Nested List</h2>
+
+            <ul>
+
+                <li>
+                    Fruits
+
+                    <ul>
+                        <li>Apple</li>
+                        <li>Mango</li>
+                        <li>Banana</li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    Vegetables
+
+                    <ul>
+                        <li>Carrot</li>
+                        <li>Spinach</li>
+                        <li>Potato</li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================= NAVIGATION LIST ================= -->
+
+        <section>
+
+            <h2>16. Navigation Menu</h2>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        Services
+
+                        <ul>
+
+                            <li>
+                                <a href="#">Web Development</a>
+                            </li>
+
+                            <li>
+                                <a href="#">App Development</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+
+        <!-- ================= LAYOUT ================= -->
+
+        <section>
+
+            <h2>17. Semantic Layout</h2>
+
+            <article>
+
+                <h3>My First Blog Post</h3>
+
+                <p>
+                    This is an independent article containing
+                    information about HTML.
+                </p>
+
+            </article>
+
+            <aside>
+
+                <h3>Related Links</h3>
+
+                <p>
+                    Learn more about HTML and CSS.
+                </p>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 My Website
+        </p>
+
+    </footer>
+
+</body>
+</html>
