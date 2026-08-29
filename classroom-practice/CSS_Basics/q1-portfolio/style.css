@@ -1,0 +1,199 @@
+
+
+/* remove default spacing */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page uses flexbox so footer stays at bottom */
+
+body{
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #172033;
+    color: white;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding-top: 70px;
+}
+
+/* Hero section */
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5%;
+
+    background-color: #dbeafe;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 30%;
+    max-width: 280px;
+
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #172033;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About */
+.about {
+    min-height: 40vh;
+
+    padding: 8vh 10%;
+
+    background-color: white;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 700px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Contact */
+.contact {
+    min-height: 30vh;
+
+    padding: 8vh 10%;
+
+    background-color: #e0f2fe;
+}
+
+.contact p {
+    margin: 0.7rem 0;
+}
+
+/* Footer */
+footer {
+    min-height: 12vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #172033;
+    color: white;
+
+    padding: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 0.8rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+}

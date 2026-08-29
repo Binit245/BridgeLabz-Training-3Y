@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f5f9;
+
+    min-height: 100vh;
+}
+
+.pricing-section {
+    padding: 70px 7%;
+}
+
+.pricing-section > h1 {
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+
+    color: #0f172a;
+}
+
+/* Three equal columns */
+.pricing-container {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+.plan {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 30px;
+
+    min-height: 480px;
+
+    background-color: white;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Hover effect */
+.plan:hover {
+    transform: scale(1.04);
+
+    background-color: #eff6ff;
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+
+    margin-bottom: 25px;
+}
+
+.price {
+    margin-bottom: 30px;
+}
+
+.price span {
+    font-size: 2.5rem;
+
+    font-weight: bold;
+}
+
+.price small {
+    color: #64748b;
+}
+
+.plan ul {
+    list-style: none;
+
+    text-align: left;
+
+    flex: 1;
+}
+
+.plan li {
+    padding: 12px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.plan li::before {
+    content: "✓ ";
+
+    color: #16a34a;
+
+    font-weight: bold;
+}
+
+/* Button styled link */
+.plan a {
+    display: block;
+
+    padding: 14px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+/* Popular plan */
+.popular {
+    border: 3px solid #2563eb;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.popular-label {
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 8px;
+
+    margin: -40px -30px 30px;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}
