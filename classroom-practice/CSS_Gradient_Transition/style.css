@@ -1,0 +1,44 @@
+
+
+.container{
+    width:500px;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    /* background-color: red; */
+    text-align: center;
+    /* box-shadow: -10px -20px 50px  black, -10px -10px 10px red; */
+    background-image: repeating-linear-gradient(90deg, yellow 0% 10% ,red 10% 20%);
+    background-image: radial-gradient(red, blue);
+    /* transition: all 1s ease; */
+    transition: transform 1s ease;
+    /* transition-property: transform;
+    transition-duration:1s ;
+    transition-timing-function: ease; */
+
+}
+
+.card:hover{
+
+     box-shadow: 
+    -10px -20px 20px red,
+     10px 10px 20px blue;
+     /* transform: translateX(-30px); */
+     /* transform: scale(1.1); */
+     /* transform: rotate(360deg); */
+   
+
+     /* transform: translate(10px,10px) scale(1.3) rotate(360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000deg); */
+     
+     transform: skew(10deg,10deg);
+
+}

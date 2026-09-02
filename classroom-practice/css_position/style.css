@@ -1,0 +1,45 @@
+.container{
+    width: 400px;
+    height: 1500px;
+    border: 1px solid red;
+    position: relative;
+}
+.box{
+    border:1px solid black;
+    width: 200px;
+    height:200px;
+    /* position: relative; */
+    position: sticky;
+}
+
+.box-1{
+    background-color: red;
+    top: 0px;
+
+}
+.box-2{
+    background-color: green;
+    width: 160px;
+    height: 160px;
+    left:30px;
+    top: 20px;
+
+}
+.box-3{
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    left: 50px;
+    top: 40px;
+   
+
+
+}
+.box-4{
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    left: 70px;
+    top:  60px;
+    
+}

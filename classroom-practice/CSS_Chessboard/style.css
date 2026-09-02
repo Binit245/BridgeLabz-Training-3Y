@@ -1,0 +1,15 @@
+
+
+.conatiner{
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+}
+
+
+.box{
+    border: 1px solid black;
+    width: 400;
+    height: 600px;
+
+}
