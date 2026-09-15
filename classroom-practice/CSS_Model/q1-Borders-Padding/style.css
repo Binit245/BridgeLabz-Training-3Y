@@ -1,0 +1,95 @@
+/* Reset default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* Flexbox aligns boxes horizontally */
+.box-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.box {
+    width: 250px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+/* Different border styles */
+.solid {
+    border: 5px solid #2563eb;
+    padding: 20px;
+}
+
+.dashed {
+    border: 5px dashed #16a34a;
+    padding: 15px;
+}
+
+.double {
+    border: 6px double #dc2626;
+    padding: 25px;
+}
+
+.groove {
+    border: 6px groove #9333ea;
+    padding: 20px;
+}
+
+/* Rounded corners */
+.rounded {
+    border: 5px solid #f59e0b;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* Larger padding demonstration */
+.padding-demo {
+    border: 5px solid #0891b2;
+    padding: 40px;
+}
+
+.box h2 {
+    margin-bottom: 12px;
+}
+
+/* Hover changes border color */
+.box:hover {
+    border-color: #111827;
+}
+
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}

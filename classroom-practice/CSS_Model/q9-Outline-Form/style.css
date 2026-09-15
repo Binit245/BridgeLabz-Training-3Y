@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #3730a3;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.form-section {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Focus changes outline color */
+input:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+    border-color: #2563eb;
+}
+
+/* Different outline style for textarea */
+textarea:focus {
+    outline: 3px dashed #16a34a;
+    outline-offset: 4px;
+    border-color: #16a34a;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3730a3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e1b4b;
+}
+
+footer {
+    text-align: center;
+    background-color: #3730a3;
+    color: white;
+    padding: 20px;
+}

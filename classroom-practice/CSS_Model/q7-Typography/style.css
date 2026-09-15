@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    background-color: #334155;
+    color: white;
+    padding: 30px;
+}
+
+.article {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.article h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* First paragraph styling */
+.intro {
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* General paragraph styling */
+.article p {
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Custom font family */
+.different-font {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+/* Larger text */
+.large-text {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+/* Style mark */
+mark {
+    background-color: #fde68a;
+    color: #92400e;
+    padding: 2px 5px;
+}
+
+/* Style strong */
+strong {
+    color: #2563eb;
+}
+
+/* Style em */
+em {
+    color: #dc2626;
+}
+
+/* First letter pseudo-element */
+.article p::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* First line pseudo-element */
+.intro::first-line {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #334155;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #111827;
+    z-index: 10;
+}
+
+main {
+    padding-top: 70px;
+}
+
+/* Linear gradient */
+.linear {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed,
+        #db2777
+    );
+
+    /* Creates a parallax-like effect */
+    background-attachment: fixed;
+}
+
+/* Radial gradient */
+.radial {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(
+        circle,
+        #22c55e,
+        #0f766e,
+        #064e3b
+    );
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+}

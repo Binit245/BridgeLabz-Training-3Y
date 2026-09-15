@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #0f172a;
+    color: white;
+}
+
+.selector-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.selector-section h2 {
+    margin: 25px 0 15px;
+}
+
+/* Attribute selector: selects input with type="text" */
+input[type="text"] {
+    border: 3px solid #2563eb;
+}
+
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Pseudo-class :hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-class :focus */
+input:focus {
+    outline: 3px solid #93c5fd;
+}
+
+/* Pseudo-class :nth-child() */
+.items li:nth-child(odd) {
+    background-color: #dbeafe;
+}
+
+/* Pseudo-class :nth-child() */
+.items li:nth-child(even) {
+    background-color: #dcfce7;
+}
+
+.items li {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Descendant combinator: selects all p inside .parent */
+.parent p {
+    color: #2563eb;
+}
+
+/* Child combinator: selects direct p children */
+.parent > p {
+    font-weight: bold;
+}
+
+/* Adjacent sibling combinator: selects p immediately after section */
+section + p {
+    background-color: #fef3c7;
+    padding: 10px;
+}
+
+/* General sibling combinator: selects p after section */
+section ~ p {
+    border-left: 4px solid #dc2626;
+    padding-left: 10px;
+}
+
+/* Pseudo-element ::before */
+.items li::before {
+    content: "✓ ";
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Pseudo-element ::after */
+.items li::after {
+    content: " •";
+    color: #64748b;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+}
