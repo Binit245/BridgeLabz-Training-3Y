@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header class="site-header">
+    <h1>Mini User Interface</h1>
+    <p>A simple responsive webpage</p>
+</header>
+
+<main class="main-content">
+
+    <section class="main-card">
+
+        <!-- Direct image link -->
+        <div class="image-section">
+            <img src="https://picsum.photos/seed/profileimage/400/400"
+                 alt="Profile Image">
+        </div>
+
+        <div class="form-section">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Write your message"
+                ></textarea>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Mini UI Practice</p>
+</footer>
+
+
+</body>
+</html>

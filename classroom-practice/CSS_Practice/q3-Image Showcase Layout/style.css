@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f3f4f6;
+color: #222;
+}
+
+header {
+text-align: center;
+padding: 30px;
+background: #111827;
+color: white;
+}
+
+header h1 {
+margin-bottom: 8px;
+}
+
+header p {
+color: #d1d5db;
+}
+
+/* Create a 3-column grid */
+.gallery {
+max-width: 1100px;
+margin: 40px auto;
+padding: 20px;
+
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+
+
+}
+
+/* Image card */
+.card {
+background: white;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image and overlay container */
+.image-container {
+position: relative;
+overflow: hidden;
+}
+
+/* Image styling */
+.image-container img {
+width: 100%;
+height: 220px;
+display: block;
+object-fit: cover;
+
+
+/* Smooth zoom */
+transition: transform 0.3s ease;
+
+
+}
+
+/* Dark overlay */
+.overlay {
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0);
+
+
+/* Smooth darkening */
+transition: background 0.3s ease;
+
+
+}
+
+/* Zoom image on hover */
+.card:hover img {
+transform: scale(1.1);
+}
+
+/* Darken image on hover */
+.card:hover .overlay {
+background: rgba(0, 0, 0, 0.3);
+}
+
+/* Image caption */
+figcaption {
+text-align: center;
+padding: 15px;
+font-size: 18px;
+font-weight: bold;
+}
+
+/* One column below 700px */
+@media (max-width: 700px) {
+.gallery {
+grid-template-columns: 1fr;
+}
+}
+
+footer {
+text-align: center;
+padding: 25px;
+background: #111827;
+color: white;
+}

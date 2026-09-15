@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f8fafc;
+}
+
+header,
+footer {
+text-align: center;
+padding: 25px;
+background: #1e293b;
+color: white;
+}
+
+.effects {
+min-height: 70vh;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 25px;
+padding: 30px;
+}
+
+.effect-card {
+width: 250px;
+padding: 30px;
+text-align: center;
+background: white;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.effect-card button {
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+background: #2563eb;
+color: white;
+cursor: pointer;
+
+
+/* Smooth transition */
+transition: all 0.3s ease-in-out;
+
+}
+
+.effect-card button:hover {
+background: #16a34a;
+transform: scale(1.1);
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.effect-card button:active {
+transform: scale(0.95);
+}
+
+.effect-card button:focus {
+outline: 3px solid #93c5fd;
+outline-offset: 4px;
+}
+
+.effect-card p {
+margin-top: 20px;
+line-height: 1.5;
+color: #555;
+}
+
+@media (max-width: 750px) {
+.effects {
+flex-direction: column;
+}
+}
