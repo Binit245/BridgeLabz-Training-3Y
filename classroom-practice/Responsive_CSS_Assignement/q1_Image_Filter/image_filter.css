@@ -1,0 +1,89 @@
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px lightgray;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.5s ease;
+}
+
+.gallery-item figcaption {
+    padding: 15px 5px 5px;
+    font-weight: bold;
+}
+
+/* Different filters */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(160%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+.gallery-item img:hover {
+    filter: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

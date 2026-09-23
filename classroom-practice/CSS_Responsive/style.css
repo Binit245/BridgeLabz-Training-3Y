@@ -1,0 +1,56 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+
+
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+
+/* desktop Screen */
+@media (max-width:1200px){
+    .container{
+        background-color: pink;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* laptop Screen */
+
+@media (max-width:760px){
+    .container{
+        background-color: green;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* mobile Screen */
+@media (max-width:500px){
+    .container{
+        background-color: brown;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    

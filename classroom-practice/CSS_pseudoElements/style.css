@@ -1,0 +1,91 @@
+
+
+h1{
+    position: relative;
+}
+
+h1::before{
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 3px;
+    background-color: red;
+    top: 50px;
+    transition: width 1s ease;
+
+}
+
+h1::first-letter{
+    font-size: 3rem;
+    color: blue;
+}
+
+
+h1:hover::before{
+    width: 100px;
+}
+
+h1:hover::first-letter{
+    color: red;
+}
+
+.btn{
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
+.btn:hover::before{
+    position: absolute;
+    content:"This is a tootip";
+    width:100px;
+    padding: 15px;
+    bottom: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+.btn:hover::after{
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    bottom: 25px;
+    left: 60px;
+}
+
+
+/* .button{
+    position: relative;
+    margin-top:100px ;
+    margin-left: 200px;
+    background-color: black;
+    color: white;
+} */
+
+.button::after{
+    content: " ";
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    background:linear-gradient(to right,red,yellow,green,blue,red);
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,-40%);
+}
+
+.button{
+    content: " ";
+    width: 140px;
+    margin-left: 200px;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
