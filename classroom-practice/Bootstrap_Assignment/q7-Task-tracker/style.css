@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.list-group-item {
+    padding: 18px;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+}
+
+.badge {
+    padding: 8px 12px;
+}

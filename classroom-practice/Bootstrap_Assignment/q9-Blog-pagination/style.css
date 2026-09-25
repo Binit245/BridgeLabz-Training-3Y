@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+article {
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+}
+
+.pagination {
+    margin-top: 40px;
+}

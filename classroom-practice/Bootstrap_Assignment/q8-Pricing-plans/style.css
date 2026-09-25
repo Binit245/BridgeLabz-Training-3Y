@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.pricing-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+}
+
+.pro-plan {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pro-plan .list-group-item {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.25);
+}
