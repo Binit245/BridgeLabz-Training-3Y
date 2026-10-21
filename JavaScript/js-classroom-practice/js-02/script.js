@@ -26,7 +26,9 @@ let username = "   Binit   "
 
 
 
-// method vs function
+                                                          // method vs function
+
+
 
 console.log(username.trim())
 console.log(username.toLowerCase())
@@ -91,7 +93,10 @@ function checkPassword(password){
 
 
 
-    // task 2: generate 4-digit OTP
+                                             // task 2: generate 4-digit OTP
+
+
+
 
     // function generateOTP(){
     //     let otp = Math.floor(Math.random()*9000) + 1000;
@@ -109,7 +114,9 @@ function checkPassword(password){
 
 
 
-    // task 3: generate 4-digit OTP
+                                                   // task 3: generate 4-digit OTP
+
+
 
 //    function generateOTP(){
 //      let otp = "";
@@ -126,7 +133,7 @@ function checkPassword(password){
 
 
 
-    // task 4: generate 4-digit OTP
+                                                     // task 4: generate 4-digit OTP
 
 
     // function generateOTP(){
@@ -155,7 +162,7 @@ function checkPassword(password){
    // background color : #000000   // 0-f
     
 
-//    function generateHexColorCode(){
+//   function generateHexColorCode(){
 //     let hex = "#";
 //     let hexDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -176,7 +183,7 @@ function checkPassword(password){
 
 
 
-// task 6: generate random password of length 8
+                                       // task 6: generate random password of length 8
 
 // function generateRandompassword(){
 //     let num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -218,7 +225,11 @@ function checkPassword(password){
 
 
 
-// array methods
+                                                           // array methods
+
+
+
+
 // let arr = ["apple", "mango", 10, 20, 30, true, false];
 // console.log(arr)
 // arr.push("grapes");  // add method at the end of the array
@@ -253,14 +264,218 @@ function checkPassword(password){
 // true: "4567gfsja", -1, 124, [], {}, true 
 // false: "", 0, null, undefined, NaN
 
-let a ="hi";
-if(a || 0){
-    console.log("hi")
-} else{
-    console.log("hello")
-}
+// let a ="hi";
+// if(a || 0){
+//     console.log("hi")
+// } else{
+//     console.log("hello")
+// }
 
-console.log(Boolean(a));  
+// console.log(Boolean(a));  
+
+
+
+
+
+
+
+
+                                                         // type conversion
+
+
+
+let result = 10 / "5";  // 2 because "5" is converted to number 5
+console.log(result);
+console.log(typeof result);
+
+
+
+console.log(true + 3);  // 4 because true is converted to 1
+console.log(false + 5);  // 5 because false is converted to 0
+
+
+
+
+let result2 = "value is" + true;  // "value is" + 1 => "value is1"
+console.log(result2);
+console.log(typeof result2);  // string because true is converted to string "true"
+
+
+
+// Explicit type conversion
+
+// you manually convert a value using functions or operators. For example, you can use the Number() function to convert a string to a number, or the String() function to convert a number to a string.
+
+let strNumber1 = "123";
+let num1 = Number(strNumber1);   
+
+console.log(num1, typeof num1);  //  123,number
+
+
+let strNumber2 = "45.67";
+let num2 = parseFloat(strNumber2);  // 45.67, number
+console.log(num2, typeof num2);  // 45.67, number
+
+
+
+
+
+// Number to String
+
+let number1 = 100;
+let str1 = String(number1);
+console.log(str1, typeof str1); //  100 string
+
+
+let number2 = 250;
+let str2 = number2 + "";
+console.log(str2, typeof str2);  // 250 string
+
+
+// Boolean to number
+
+let bool1 = true;
+let num3 = Number(bool1);
+console.log(num3, typeof num3);    // 1, number
+
+
+
+
+
+
+                                      // function declearation
+
+
+// function add(a,b){
+//     let result = a+b;
+//     console.log(result)
+//     return result;
+
+// }
+
+// let a = add(10,20);
+// console.log(a);
+
+                                        // function expression
+
+// let add = function(a,b){
+//     return a+b;
+// }
+
+// let a = add(10,30);
+// console.log(a)
+
+
+                                        //  arrow function
+
+
+// let add = (a,b)=>{     // let add = (a,b)a+b  ek line me return ke liye aise likh sakte hain arrow function ko
+//     return a+b;
+// }
+
+// let a = add(10,30);
+// console.log(a);
+
+
+
+// let add = (a,b)=> a+b
+// function calculate(a,b,callback){      // higher-order function
+//     return callback(a,b);
+// }
+
+// let ans = calculate(10,30,add);
+// let multi = calculate(20,10,(a,b)=>a*b);
+// console.log(ans)
+// console.log(multi)
+
+
+let arr = [1,2,3,4,5];
+
+let resul = arr.map((x)=>{
+    return x*x
+});
+
+let even = arr.filter((x)=>{
+    return x%2==0
+});
+console.log(even)
+
+// let resul = arr.map(x=> x*2);
+
+console.log(resul)
+
+
+
+
+
+                                // Question Practice
+
+// let arr3 =["apple", "mango","orange","apple","apple"];
+
+// let result3 = arr3.filter((x)=>{
+//     let ele = x.toLowerCase();
+
+//     return ele != "apple"
+    
+// })
+// console.log(result3)
+
+
+
+                        // filter the fruit whose length is > 5
+
+// let arr2 = ["apple", "mango","orange","apple","apple"];
+
+// let result4 = arr2.filter((x)=>{
+//     let len = 
+// });
+
+
+
+
+
+                                               // filter the age > 18
+
+
+let arr3 = [12,34,9,60,36,24];
+
+
+
+
+
+
+
+
+
+                                    // filter the furit start with "A" or 'a'
+
+let arr4 = ["apple", "mango","orange","apple","apple"];
+
+
+
+
+
+
+
+                                    // map the square of each element in new array
+
+            
+let arr5 = [1,2,3,4,5];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
