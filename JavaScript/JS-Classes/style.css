@@ -1,0 +1,81 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main heading */
+h1, h2 {
+    color: navy;
+    text-align: center;
+}
+
+/* Form container */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Input fields */
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Input focus */
+input:focus,
+select:focus {
+    outline: 2px solid skyblue;
+}
+
+/* Buttons */
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: blue;
+}
+
+/* Error and success messages */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+}
+
+/* Output details */
+#ticket,
+#userDetails,
+#output {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}

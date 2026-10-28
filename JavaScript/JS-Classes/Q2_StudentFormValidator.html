@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form Validator</title>
+    <style>
+        input {
+            display: block;
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration</h2>
+
+    <form id="studentForm">
+        <input id="name" placeholder="Name" required>
+        <small id="nameError"></small>
+
+        <input id="email" placeholder="Email" required>
+        <small id="emailError"></small>
+
+        <input id="phone" placeholder="10-digit Phone" required>
+        <small id="phoneError"></small>
+
+        <input id="password" type="password" placeholder="Password" required>
+        <small id="passwordError"></small>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="Q2_StudentFormValidator.js"></script>
+</body>
+</html>
