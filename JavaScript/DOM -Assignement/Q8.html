@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q8 - Custom Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        #options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 180px;
+            background: white;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        #options button {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Custom Dropdown</h1>
+
+    <div class="dropdown" id="dropdown">
+        <button id="dropdownButton" type="button">
+            Choose a course
+        </button>
+
+        <div id="options" class="hidden">
+            <button type="button" data-value="Java">Java</button>
+            <button type="button" data-value="JavaScript">JavaScript</button>
+            <button type="button" data-value="Python">Python</button>
+            <button type="button" data-value="SQL">SQL</button>
+        </div>
+    </div>
+</div>
+<script src="Q8.js"></script>
+</body>
+</html>

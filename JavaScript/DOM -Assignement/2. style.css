@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    padding: 25px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+button {
+    background: steelblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li {
+    margin: 12px 0;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}

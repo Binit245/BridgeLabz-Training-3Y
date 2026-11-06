@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q7 - Mouse Coordinates</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #trackingBox {
+            width: 400px;
+            height: 400px;
+            max-width: 100%;
+            border: 2px solid steelblue;
+            background: aliceblue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Mouse Coordinates Logger</h1>
+
+    <p id="coordinates">Move your mouse inside the box.</p>
+
+    <div id="trackingBox"></div>
+
+    <p>Double-click inside the box to drop a red dot.</p>
+</div>
+<script src="Q7.js"></script>
+</body>
+</html>

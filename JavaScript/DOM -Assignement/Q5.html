@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 - Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 15px;
+        }
+
+        .modal-content img {
+            max-width: 80vw;
+            max-height: 75vh;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" id="gallery">
+        <img src="https://picsum.photos/id/1015/500/350" alt="Mountain">
+        <img src="https://picsum.photos/id/1025/500/350" alt="Dog">
+        <img src="https://picsum.photos/id/1035/500/350" alt="Forest">
+        <img src="https://picsum.photos/id/1043/500/350" alt="Nature">
+        <img src="https://picsum.photos/id/106/500/350" alt="Waterfall">
+        <img src="https://picsum.photos/id/1074/500/350" alt="Wildlife">
+    </div>
+</div>
+
+<div id="imageModal" class="modal hidden">
+    <div class="modal-content" id="modalContent">
+        <img id="largeImage" src="" alt="Preview">
+        <br>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+<script src="Q5.js"></script>
+</body>
+</html>
