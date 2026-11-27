@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Courses</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: aliceblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        #search {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .course {
+            background: white;
+            padding: 15px;
+            margin: 12px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        mark {
+            background: yellow;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Search Online Courses</h1>
+</header>
+
+<main>
+
+    <input type="text" id="search"
+           placeholder="Search courses...">
+
+    <button id="clear">Clear Search</button>
+
+    <h3 id="count">Total Courses: 5</h3>
+
+    <section id="courseList">
+
+        <article class="course">
+            <h2>Java Programming</h2>
+            <p>Learn Java from beginner to advanced level.</p>
+        </article>
+
+        <article class="course">
+            <h2>Python Programming</h2>
+            <p>Learn Python for data science and development.</p>
+        </article>
+
+        <article class="course">
+            <h2>Web Development</h2>
+            <p>Learn HTML, CSS and JavaScript.</p>
+        </article>
+
+        <article class="course">
+            <h2>Machine Learning</h2>
+            <p>Learn machine learning algorithms.</p>
+        </article>
+
+        <article class="course">
+            <h2>Database Management</h2>
+            <p>Learn SQL and database concepts.</p>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

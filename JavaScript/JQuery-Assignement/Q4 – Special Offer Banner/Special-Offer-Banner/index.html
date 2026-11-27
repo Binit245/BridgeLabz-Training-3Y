@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .banner {
+            padding: 30px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            color: white;
+            background: steelblue;
+        }
+
+        .banner:nth-child(even) {
+            background: seagreen;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background: navy;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Special Offers</h1>
+</header>
+
+<main>
+
+    <section id="banner1" class="banner">
+        <h2>Offer 1</h2>
+        <p>Get 20% discount on electronics!</p>
+    </section>
+
+    <section id="banner2" class="banner">
+        <h2>Offer 2</h2>
+        <p>Buy one get one free!</p>
+    </section>
+
+    <section id="banner3" class="banner">
+        <h2>Offer 3</h2>
+        <p>Free delivery on shopping above ₹999!</p>
+    </section>
+
+    <section id="banner4" class="banner">
+        <h2>Offer 4</h2>
+        <p>Special student discount available!</p>
+    </section>
+
+    <section id="banner5" class="banner">
+        <h2>Offer 5</h2>
+        <p>Get exciting festival deals!</p>
+    </section>
+
+    <div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="slideUp">Slide Up</button>
+        <button id="slideDown">Slide Down</button>
+        <button id="fadeOut">Fade Out</button>
+        <button id="fadeIn">Fade In</button>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

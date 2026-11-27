@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Highlight</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid lightgray;
+        }
+
+        .product.selected-product {
+            background: lightyellow;
+            border-color: orange;
+        }
+
+        .product[data-discount="yes"] {
+            border: 2px solid green;
+        }
+
+        .details {
+            display: none;
+            color: darkgreen;
+        }
+
+        .favorite {
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .favorite.selected {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+</header>
+
+<main>
+    <section class="products">
+
+        <article class="product" data-discount="yes" data-stock="yes">
+            <h2>Smart Watch</h2>
+            <p>Price: ₹1500</p>
+            <p>Discount: 20%</p>
+            <span class="favorite">♡</span>
+            <p class="details">Waterproof and Bluetooth enabled.</p>
+        </article>
+
+        <article class="product" data-discount="no" data-stock="yes">
+            <h2>Headphones</h2>
+            <p>Price: ₹1200</p>
+            <p>No Discount</p>
+            <span class="favorite">♡</span>
+            <p class="details">High-quality wireless sound.</p>
+        </article>
+
+        <article class="product" data-discount="yes" data-stock="no">
+            <h2>Keyboard</h2>
+            <p>Price: ₹900</p>
+            <p>Discount: 10%</p>
+            <span class="favorite">♡</span>
+            <p class="details">Mechanical gaming keyboard.</p>
+        </article>
+
+        <article class="product" data-discount="no" data-stock="yes">
+            <h2>Mouse</h2>
+            <p>Price: ₹500</p>
+            <p>No Discount</p>
+            <span class="favorite">♡</span>
+            <p class="details">Wireless optical mouse.</p>
+        </article>
+
+        <article class="product" data-discount="yes" data-stock="yes">
+            <h2>Speaker</h2>
+            <p>Price: ₹2000</p>
+            <p>Discount: 15%</p>
+            <span class="favorite">♡</span>
+            <p class="details">Portable Bluetooth speaker.</p>
+        </article>
+
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

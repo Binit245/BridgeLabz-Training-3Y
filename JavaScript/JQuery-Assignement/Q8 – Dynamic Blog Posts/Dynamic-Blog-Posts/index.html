@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Blog Posts</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: aliceblue;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .post {
+            background: white;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        .featured {
+            background: lightyellow;
+            border: 2px solid orange;
+        }
+
+        .tag {
+            color: white;
+            background: steelblue;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Management Dashboard</h1>
+</header>
+
+<main>
+
+    <section id="blogList">
+
+        <article class="post">
+            <h2>Introduction to JavaScript</h2>
+            <p>Learn JavaScript basics and programming.</p>
+        </article>
+
+        <article class="post">
+            <h2>Importance of Data Science</h2>
+            <p>Explore data science and its applications.</p>
+        </article>
+
+        <article class="post">
+            <h2>Web Development Guide</h2>
+            <p>Learn modern web development technologies.</p>
+        </article>
+
+        <article class="post">
+            <h2>Machine Learning Basics</h2>
+            <p>Understand machine learning concepts.</p>
+        </article>
+
+        <article class="post">
+            <h2>Database Management</h2>
+            <p>Learn SQL and database management.</p>
+        </article>
+
+    </section>
+
+    <button id="add">Add New Post</button>
+    <button id="featured">Prepend Featured Post</button>
+    <button id="remove">Remove Last Post</button>
+    <button id="tags">Add Tags</button>
+    <button id="highlight">Highlight Keywords</button>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

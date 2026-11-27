@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi jQuery Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: aliceblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .widget {
+            background: white;
+            padding: 25px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        .active {
+            border: 3px solid green;
+            background: lightyellow;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #modal {
+            display: none;
+            background: white;
+            padding: 25px;
+            border: 2px solid steelblue;
+            margin: 20px;
+        }
+
+        .tooltip {
+            display: none;
+            color: darkblue;
+            background: lightyellow;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Multi-jQuery Dashboard</h1>
+</header>
+
+<main>
+
+    <section class="widget active" id="carousel">
+        <h2>Carousel Slider</h2>
+        <p id="slideText">Welcome to Slide 1</p>
+
+        <button id="next">Next Slide</button>
+    </section>
+
+    <section class="widget" id="notification">
+        <h2>Notifications</h2>
+        <button id="openModal">Open Notification</button>
+
+        <div id="modal">
+            <h3>New Notification!</h3>
+            <p>You have a new message.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </section>
+
+    <section class="widget">
+        <h2>Dashboard Widgets</h2>
+
+        <button class="widgetButton">Widget 1</button>
+        <button class="widgetButton">Widget 2</button>
+        <button class="widgetButton">Widget 3</button>
+    </section>
+
+    <section class="widget">
+        <h2>Tooltip Example</h2>
+
+        <button class="tipButton"
+                data-tip="This is the first tooltip">
+            Hover Me 1
+        </button>
+
+        <button class="tipButton"
+                data-tip="This is the second tooltip">
+            Hover Me 2
+        </button>
+
+        <button class="tipButton"
+                data-tip="This is the third tooltip">
+            Hover Me 3
+        </button>
+
+        <p class="tooltip" id="tooltip"></p>
+    </section>
+
+</main>
+
+<!-- First jQuery version -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Save first version and release $ -->
+<script>
+    var jq1 = jQuery.noConflict();
+</script>
+
+<!-- Second jQuery version -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Save second version and release global jQuery and $ -->
+<script>
+    var jq2 = jQuery.noConflict(true);
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

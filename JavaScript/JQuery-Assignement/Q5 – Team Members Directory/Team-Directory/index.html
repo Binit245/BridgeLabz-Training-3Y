@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Directory</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: aliceblue;
+            padding: 25px;
+        }
+
+        .department {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 650px;
+            border-radius: 10px;
+        }
+
+        .employee {
+            padding: 12px;
+            margin: 8px;
+            background: lightgray;
+            cursor: pointer;
+        }
+
+        .highlight {
+            background: lightgreen;
+        }
+
+        .contact {
+            display: none;
+            color: darkblue;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Team Members Directory</h1>
+</header>
+
+<main>
+
+    <section class="department">
+        <h2 class="dept-name">Development Department</h2>
+
+        <div class="team">
+            <article class="employee manager">
+                <h3>Rahul - Manager</h3>
+                <p class="contact">Email: rahul@example.com</p>
+            </article>
+
+            <article class="employee">
+                <h3>Amit - Developer</h3>
+                <p class="contact">Email: amit@example.com</p>
+            </article>
+
+            <article class="employee">
+                <h3>Priya - Developer</h3>
+                <p class="contact">Email: priya@example.com</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="department">
+        <h2 class="dept-name">Design Department</h2>
+
+        <div class="team">
+            <article class="employee manager">
+                <h3>Neha - Manager</h3>
+                <p class="contact">Email: neha@example.com</p>
+            </article>
+
+            <article class="employee">
+                <h3>Ravi - Designer</h3>
+                <p class="contact">Email: ravi@example.com</p>
+            </article>
+
+            <article class="employee">
+                <h3>Simran - Designer</h3>
+                <p class="contact">Email: simran@example.com</p>
+            </article>
+        </div>
+    </section>
+
+    <button id="random">Select Random Employee</button>
+    <button id="collapse">Collapse / Expand Teams</button>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

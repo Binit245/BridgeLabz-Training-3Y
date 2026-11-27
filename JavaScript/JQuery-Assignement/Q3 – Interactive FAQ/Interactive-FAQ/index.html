@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        .question {
+            cursor: pointer;
+            color: darkblue;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        input {
+            padding: 8px;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<main>
+
+    <section class="faq-item">
+        <h3 class="question">1. What is jQuery?</h3>
+        <p class="answer">jQuery is a JavaScript library that simplifies DOM manipulation.</p>
+        <input type="text" placeholder="Write your answer">
+    </section>
+
+    <section class="faq-item">
+        <h3 class="question">2. What is HTML?</h3>
+        <p class="answer">HTML is used to create the structure of web pages.</p>
+        <input type="text" placeholder="Write your answer">
+    </section>
+
+    <section class="faq-item">
+        <h3 class="question">3. What is CSS?</h3>
+        <p class="answer">CSS is used to style web pages.</p>
+        <input type="text" placeholder="Write your answer">
+    </section>
+
+    <section class="faq-item">
+        <h3 class="question">4. What is JavaScript?</h3>
+        <p class="answer">JavaScript adds interactivity to websites.</p>
+        <input type="text" placeholder="Write your answer">
+    </section>
+
+    <section class="faq-item">
+        <h3 class="question">5. What is DOM?</h3>
+        <p class="answer">DOM represents the structure of an HTML document.</p>
+        <input type="text" placeholder="Write your answer">
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

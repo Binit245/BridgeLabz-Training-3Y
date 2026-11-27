@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 40px;
+        }
+
+        main {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 8px;
+            border: none;
+            border-radius: 6px;
+            background-color: steelblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+
+        #greeting {
+            color: darkblue;
+            cursor: pointer;
+        }
+
+        #welcomeMessage {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+
+    <main>
+        <h2 id="greeting">Hello!</h2>
+
+        <p id="welcomeMessage">
+            Welcome! We are happy to have you here.
+        </p>
+
+        <button id="changeGreeting">Change Greeting</button>
+        <button id="toggleWelcome">Show / Hide Welcome</button>
+
+        <section>
+            <h3>Our Features</h3>
+            <ul>
+                <li>Learn New Skills</li>
+                <li>Improve Your Knowledge</li>
+                <li>Explore Opportunities</li>
+                <li>Stay Motivated</li>
+                <li>Achieve Your Goals</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
